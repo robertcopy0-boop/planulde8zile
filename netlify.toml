@@ -1,4 +1,2 @@
-@'
 [functions]
   directory = "functions"
-'@ | Set-Content netlify.toml -Encoding UTF8
