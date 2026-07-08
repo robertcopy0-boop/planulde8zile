@@ -890,7 +890,6 @@ img {
   produsBaza: "Planul recapitulativ de 8 zile",
   produsOrderBump: "Material problema 1, Subiectul 3",
   variantaBaza: "Pagina 521 lei",
-  thankYouUrl: "/multumesc.html"
 };
 
   /*
@@ -1201,11 +1200,32 @@ if (window.fbq) fbq("track", "Purchase", { value: totalLei, currency: "RON" });
 if (window.ttq) ttq.track("CompletePayment", { value: totalLei, currency: "RON" });
 if (window.gtag) gtag("event", "purchase", { value: totalLei, currency: "RON" });
 
-        await removeAbandonedCart(data.email);
+try {
+  const emailResponse = await fetch("/.netlify/functions/send-materials", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      paymentIntentId: confirmation.paymentIntent.id
+    })
+  });
 
-        showMessage("Plata a fost finalizată cu succes. Te redirecționez...", "success");
+  const emailResult = await emailResponse.json();
 
-        window.location.href = CHECKOUT_CONFIG.thankYouUrl;
+  if (!emailResponse.ok || !emailResult.ok) {
+    console.warn("Plata a fost făcută, dar materialele nu au fost trimise automat:", emailResult.error);
+  }
+} catch (emailError) {
+  console.warn("Eroare la trimiterea materialelor:", emailError);
+}
+
+await removeAbandonedCart(data.email);
+
+showMessage("Plata a fost finalizată cu succes. Verifică emailul pentru materiale.", "success");
+
+payButton.disabled = true;
+payButton.textContent = "PLATA A FOST FINALIZATĂ";
+
+form.scrollIntoView({ behavior: "smooth", block: "start" });
       } else {
         throw new Error("Plata nu a fost confirmată.");
       }
