@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://t.contentsquare.net/uxa/303566c7e4c39.js"></script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '964754689572275');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=964754689572275&ev=PageView&noscript=1"
+/></noscript>
+<script>
+fbq('track', 'InitiateCheckout', {
+  value: 79,
+  currency: 'RON'
+});
+</script>
+<!-- End Meta Pixel Code -->
+
+<title>Finalizează comanda</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"/>
+
+<style>
+body { font-family: 'Inter', sans-serif; }
+
+.btn-main {
+    background:#22c55e;
+    color:#000;
+    font-weight:900;
+}
+</style>
+</head>
+
+<body class="bg-[#0a0a0a] text-white px-6 py-10">
+
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+<!-- STANGA -->
+<div class="text-center max-w-md mx-auto">
+
+<p class="text-green-400 font-black text-sm mb-2">🔥 FELICITĂRI!</p>
+
+<h1 class="text-4xl md:text-5xl font-extrabold mb-6">
+Ești la un pas de <span class="text-green-400">nota 5</span> la mate
+</h1>
+
+<p class="text-white text-xl font-bold mb-4">
+📦 Iată exact ce primești:
+</p>
+
+<div class="space-y-3 text-sm">
+<div class="bg-[#111827] p-3 rounded-xl">✔️ Plan clar pe 8 zile</div>
+<div class="bg-[#111827] p-3 rounded-xl">✔️ Metode simple</div>
+<div class="bg-[#111827] p-3 rounded-xl">✔️ Exerciții ca la examen</div>
+<div class="bg-[#111827] p-3 rounded-xl">✔️ Pași clari</div>
+<div class="bg-[#111827] p-3 rounded-xl">✔️ Acces pe viață</div>
+
+<div class="bg-green-500 text-black p-3 rounded-xl font-semibold mt-2">
+🎁 BONUS: întâlnire 1 la 1
+</div>
+</div>
+
+</div>
+
+<!-- DREAPTA -->
+<div class="bg-white text-black p-6 rounded-2xl">
+
+<h2 class="font-black text-xl mb-4">Date de facturare</h2>
+
+<form id="checkoutForm" class="space-y-3">
+
+<input type="email" id="email" placeholder="Email" required class="w-full border p-2 rounded">
+
+<div class="grid grid-cols-2 gap-2">
+<input type="text" id="prenume" placeholder="Prenume" required class="border p-2 rounded">
+<input type="text" id="nume" placeholder="Nume" required class="border p-2 rounded">
+</div>
+
+<input id="telefon" type="tel" class="w-full border p-2 rounded" placeholder="Număr de telefon">
+
+<input type="text" id="adresa" placeholder="Stradă" required class="w-full border p-2 rounded">
+
+<div class="grid grid-cols-2 gap-2">
+    <select id="tara" class="border p-2 rounded" data-placeholder="Țară"></select>
+    <select id="judet" class="border p-2 rounded" data-placeholder="Județ"></select>
+</div>
+
+<select id="oras" class="w-full border p-2 rounded mt-2" data-placeholder="Oraș"></select>
+
+<select id="tipClient" class="w-full border p-2 rounded mt-2" onchange="toggleFirma()">
+    <option value="pf">Persoană fizică</option>
+    <option value="pj">Persoană juridică</option>
+</select>
+
+<div id="firmaFields" class="hidden space-y-2">
+<input type="text" id="denumire" placeholder="Denumire companie" class="w-full border p-2 rounded">
+<input type="text" id="cif" placeholder="CIF" class="w-full border p-2 rounded">
+<input type="text" id="vat" placeholder="EU VAT Number (opțional)" class="w-full border p-2 rounded">
+</div>
+
+</form>
+
+<!-- PRODUS -->
+<div class="mt-6 border-t pt-4">
+<p>PLANUL "8 ZILE SPRE NOTA 5" </p>
+<p class="text-right font-black text-xl">79 LEI</p>
+</div>
+
+<!-- TOTAL -->
+<div class="border-t pt-4 mt-4">
+<p class="flex justify-between">
+<span>Total:</span>
+<span class="font-black">79 LEI</span>
+</p>
+</div>
+
+<!-- CHECKBOX -->
+<div class="mt-4 text-sm text-gray-700">
+
+<label class="flex items-start gap-3">
+<input type="checkbox" id="gdprConsent">
+<span>
+Sunt de acord cu 
+<a href="/termeni.html" class="underline">Termenii</a> și 
+<a href="/confidentialitate.html" class="underline">Confidențialitatea</a>
+</span>
+</label>
+
+<label class="flex items-start gap-3 mt-3">
+<input type="checkbox" id="marketingConsent">
+<span>
+Vreau emailuri cu sfaturi și oferte (inclusiv meditații)
+</span>
+</label>
+
+</div>
+
+<button onclick="goToStripe()" class="btn-main w-full py-4 rounded-xl mt-6 text-lg">
+FINALIZEAZĂ COMANDA
+</button>
+
+</div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"></script>
+
+<!-- TELEFON -->
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+
+<script>
+const input = document.querySelector("#telefon");
+
+const iti = window.intlTelInput(input, {
+    initialCountry: "ro",
+    preferredCountries: ["ro", "gb", "de", "it"],
+    separateDialCode: true,
+});
+</script>
+
+<script>
+function toggleFirma() {
+    const tip = document.getElementById("tipClient").value;
+    document.getElementById("firmaFields").classList.toggle("hidden", tip !== "pj");
+}
+
+async function goToStripe() {
+
+    const requiredFields = [
+    "email","prenume","nume","telefon",
+    "adresa","tara","judet","oras"
+	];
+
+    if(document.getElementById("tipClient").value === "pj"){
+        requiredFields.push("denumire","cif");
+    }
+
+    for(let id of requiredFields){
+        const field = document.getElementById(id);
+        if(!field.value.trim()){
+            alert("Completează toate câmpurile obligatorii.");
+            field.focus();
+            return;
+        }
+    }
+
+    const email = document.getElementById("email").value;
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+        alert("Introdu un email valid.");
+        return;
+    }
+
+    if(!iti.isValidNumber()){
+        alert("Introdu un număr de telefon valid.");
+        return;
+    }
+
+    const telefonComplet = iti.getNumber();
+
+    if(!document.getElementById("gdprConsent").checked){
+        alert("Te rog să accepți termenii.");
+        return;
+    }
+
+  const marketing = document.getElementById("marketingConsent");
+
+if (marketing && marketing.checked) {
+    try {
+        const res = await fetch("/.netlify/functions/sendEmail", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+        email: document.getElementById("email").value, // 🔑 aici
+        prenume: document.getElementById("prenume").value,
+        nume: document.getElementById("nume").value,
+        telefon: iti.getNumber()
+    })
+});
+
+        const data = await res.json(); // pentru a vedea răspunsul MailerLite
+        console.log("MailerLite response:", data);
+
+        // mic delay pentru siguranță
+        await new Promise(r => setTimeout(r, 300));
+
+    } catch (e) {
+        console.error("MailerLite error:", e);
+        alert("Eroare la trimiterea datelor către MailerLite. Vezi consola pentru detalii.");
+    }
+}
+
+// 👉 IMPORTANT: redirect-ul trebuie în afara if-ului
+window.location.href = "https://buy.stripe.com/3cIbJ15JF86q9001W67AI01";}
+
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+const countrySelect = document.getElementById("tara");
+const stateSelect = document.getElementById("judet");
+const citySelect = document.getElementById("oras");
+
+// helper placeholder
+function setPlaceholder(select) {
+    const text = select.dataset.placeholder;
+    select.innerHTML = `<option value="" disabled selected>${text}</option>`;
+}
+
+// 1. ȚĂRI
+fetch("https://countriesnow.space/api/v0.1/countries/positions")
+.then(res => res.json())
+.then(data => {
+
+    const countries = data.data
+        .map(c => c.name)
+        .sort((a,b) => a.localeCompare(b, 'ro'));
+
+    setPlaceholder(countrySelect);
+
+    countries.forEach(name => {
+        countrySelect.add(new Option(name, name));
+    });
+
+    countrySelect.value = "Romania";
+    loadStates();
+});
+
+// 2. JUDEȚE
+function loadStates() {
+    setPlaceholder(stateSelect);
+    setPlaceholder(citySelect);
+
+    fetch("https://countriesnow.space/api/v0.1/countries/states", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ country: countrySelect.value })
+    })
+    .then(res => res.json())
+    .then(data => {
+
+	if(!data.data || !data.data.states) return;
+
+        const states = data.data.states
+            .map(s => s.name)
+            .sort((a,b) => a.localeCompare(b, 'ro'));
+
+        states.forEach(name => {
+            stateSelect.add(new Option(name, name));
+        });
+    });
+}
+
+// 3. ORAȘE
+function loadCities() {
+    setPlaceholder(citySelect);
+
+    fetch("https://countriesnow.space/api/v0.1/countries/state/cities", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            country: countrySelect.value,
+            state: stateSelect.value
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+
+    if (!data.data) return;
+
+        const cities = data.data
+            .sort((a,b) => a.localeCompare(b, 'ro'));
+
+        cities.forEach(name => {
+            citySelect.add(new Option(name, name));
+        });
+    });
+}
+
+// EVENTS
+countrySelect.addEventListener("change", loadStates);
+stateSelect.addEventListener("change", loadCities);
+
+});
+</script>
+
+</body>
+
+<!-- FOOTER -->
+<footer class="mt-16 border-t border-gray-800 pt-8 text-sm text-gray-400">
+
+<div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+
+<div>
+<p class="font-bold text-white mb-2">Robert Matematică</p>
+<p>Ajut elevii să ajungă la nota 5 prin metode simple și clare.</p>
+</div>
+
+<div>
+<p class="font-bold text-white mb-2">Linkuri utile</p>
+<div class="space-y-1">
+<a href="/termeni.html" class="block">Termeni și Condiții</a>
+<a href="/confidentialitate.html" class="block">Politica de confidențialitate</a>
+<a href="/contact.html" class="block">Contact</a>
+</div>
+</div>
+
+<div>
+<p class="font-bold text-white mb-2">Contact</p>
+<p>Email: robertmatematica0@gmail.com</p>
+<p class="mt-2 text-xs">
+Acest site respectă legislația GDPR privind protecția datelor.
+</p>
+</div>
+
+</div>
+
+<p class="text-center text-xs mt-8 text-gray-600">
+© 2026 Robert Matematică. Toate drepturile rezervate.
+</p>
+
+</footer>
+
+</html>

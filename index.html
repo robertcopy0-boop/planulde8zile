@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://t.contentsquare.net/uxa/303566c7e4c39.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-16Y701NCW0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-16Y701NCW0');
+</script>
+
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('D8IP57BC77UAEKHUNFAG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '964754689572275');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=964754689572275&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<title>Progres real</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Inter', sans-serif; }
+
+.bg-dark { background:#0a0a0a; }
+
+.time-separator{
+font-size:18px;
+font-weight:900;
+color:#4ade80;
+margin-bottom:14px;
+}
+
+.time-block{
+text-align:center;
+}
+
+.time-number{
+background:#000;
+color:#22c55e;
+font-size:20px;
+font-weight:900;
+padding:6px 10px;
+border-radius:6px;
+min-width:40px;
+box-shadow:0 4px 10px rgba(0,0,0,0.4);
+transition:0.2s;
+}
+
+@media(min-width:640px){
+.time-number{ font-size:32px; padding:10px 16px; min-width:60px; }
+}
+
+.time-number:hover{
+transform:scale(1.08);
+background:#111;
+}
+
+.time-label{
+font-size:11px;
+font-weight:700;
+color:#4ade80;
+margin-top:4px;
+letter-spacing:1px;
+}
+
+.btn-main {
+    background:#22c55e;
+    color:#000;
+    font-weight:900;
+    transition:0.2s;
+}
+.btn-main:hover {
+    background:#16a34a;
+    transform:scale(1.05);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+.pulse { animation: pulse 1.2s infinite; }
+
+.day-card {
+    background: linear-gradient(135deg, #0f172a, #111827);
+    color: white;
+    padding: 24px 26px;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.day-title {
+    display: block;
+    color: #86efac;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 6px;
+}
+
+.day-topic {
+    display: block;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.day-card p {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.45;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.final-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 155px;
+    padding: 30px 26px;
+    border: 1px solid rgba(134, 239, 172, 0.25);
+}
+
+.final-content{
+    max-width: 620px;
+}
+
+.final-card .day-title{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.final-card .day-topic{
+    font-size: 30px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+}
+
+.final-card p{
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+
+
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.faq-content.open {
+    max-height: 500px;
+    opacity: 1;
+}
+</style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<div class="w-full bg-red-600 text-white px-3 py-2 sticky top-0 z-50 shadow-lg">
+<div class="flex flex-col sm:grid sm:grid-cols-3 items-center gap-1 sm:gap-0">
+
+<div id="urgencyText" class="font-black uppercase text-xs sm:text-lg md:text-xl tracking-wide text-center sm:text-left"
+style="
+color: white;
+-webkit-text-stroke: 0.2px black;
+text-shadow: 0 3px 6px rgba(0,0,0,0.8);
+transition: opacity 0.3s ease;
+">
+🚨 <span style="color: white;">OFERTA EXPIRĂ ÎN CURÂND</span>
+</div>
+
+
+<script>
+const urgency = document.getElementById("urgencyText");
+
+function blinkUrgency() {
+    urgency.style.opacity = "1";
+
+    setTimeout(() => {
+        urgency.style.opacity = "0";
+    }, 500); // 2 secunde vizibil
+
+    setTimeout(() => {
+        blinkUrgency();
+    }, 1000); // total ciclu 4 secunde (2 vizibil + 2 invizibil)
+}
+
+blinkUrgency();
+</script>
+
+<div id="countdown" class="flex items-center justify-center gap-3 px-3">
+
+<div class="time-block">
+<div class="time-number" id="minutes">25</div>
+<div class="time-label">MINUTE</div>
+</div>
+
+<div class="time-separator">:</div>
+
+<div class="time-block">
+<div class="time-number" id="seconds">00</div>
+<div class="time-label">SECUNDE</div>
+</div>
+
+</div>
+
+<a href="https://planulspre5.netlify.app/confirmare.html" class="offer-button justify-self-end bg-white text-black font-black px-3 py-1.5 sm:px-6 sm:py-2 rounded-full text-xs sm:text-sm md:text-base shadow-md hover:scale-110 transition whitespace-nowrap">
+⚡ ACCESEAZĂ PLANUL
+</a>
+
+</div>
+</div>
+
+<!-- HERO -->
+<section class="bg-dark text-white pt-4 pb-16 text-center px-6">
+
+<div class="mt-2 mb-11 text-center max-w-3xl mx-auto">
+
+<p class="text-base md:text-lg text-gray-200 leading-relaxed">
+⚠️ 
+<span class="font-semibold text-white underline decoration-green-400 underline-offset-4">
+Pentru părinții al căror copil are emoții și se simte blocat la matematică înainte de Evaluarea Națională
+</span> 
+</p>
+
+</div>
+
+<h1 class="text-4xl md:text-6xl font-black mb-5 leading-tight">
+DE LA CONFUZIE LA CLARITATE <br> ÎN DOAR 8 ZILE
+</h1>
+
+<h2 class="text-xl text-green-400 mb-11">
+Chiar dacă acum matematica pare grea sau imposibil de recuperat
+</h2>
+
+<a href="https://planulspre5.netlify.app/confirmare.html" class="btn-main offer-button px-6 py-4 rounded-full text-base sm:text-xl mb-4 inline-block w-full sm:w-auto max-w-xs sm:max-w-none">
+VREAU PLANUL DE 8 ZILE CU DOAR <span class="line-through text-red-700">300 lei</span> 99 LEI
+</a>
+
+<p class="text-gray-400 mb-1">Plan pe 8 zile | Explicații simple | Acces pe viață</p>
+
+<p class="text-green-400 font-semibold">
+🎁 BONUS: ÎNTÂLNIRE GRATUITĂ PENTRU CLARIFICĂRI, ÎNTREBĂRI ȘI SPRIJIN PERSONALIZAT LA MATEMATICĂ
+</p>
+</section>
+
+
+<!-- ESTE PENTRU TINE -->
+<section class="bg-white-50 pt-7 pb text-center px-6">
+
+<p class="text-green-500 uppercase font-semibold mb-4">
+Gata cu învățatul haotic la mate!
+</p>
+
+<h2 class="text-3xl font-black mb-6">Te regăsești în una dintre situațiile de mai jos? </h2>
+
+<div class="max-w-3xl mx-auto text-left space-y-3">
+<p>🎯 Copilul amână exercițiile pentru că nu știe cu ce să înceapă</p>
+<p>🎯 Lucrează mecanic, dar nu înțelege pașii din spate</p>
+<p>🎯 Greșește la calcule simple, deși știe teoria </p>
+<p>🎯 Simte că matematica este prea grea de recuperat</p>
+<p>🎯 Are nevoie de explicații simple, pași clari și mai multă încredere</p>
+</div>
+
+<p class="mt-6 text-lg font-semibold max-w-xl mx-auto"><br>
+Dacă ai bifat măcar una dintre situațiile de mai sus, <br> copilul are nevoie de o direcție simplă și de explicații pe înțelesul lui, nu de mai multă presiune
+</p>
+
+<a href="https://planulspre5.netlify.app/confirmare.html" class="btn-main offer-button mt-6 px-6 py-4 rounded-full text-base sm:text-xl inline-block w-full sm:w-auto max-w-xs sm:max-w-none">
+VREAU PLANUL DE 8 ZILE CU DOAR <span class="line-through text-red-700">300 lei</span> 99 LEI
+</a>
+
+<p class="text-gray-500 mt-3 sm:mt-2">Plan pe 8 zile | Explicații simple | Acces pe viață</p>
+<p class="text-green-500 font-semibold mt-3 sm:mt-1">
+🎁 BONUS: ÎNTÂLNIRE GRATUITĂ PENTRU CLARIFICĂRI, ÎNTREBĂRI ȘI SPRIJIN PERSONALIZAT LA MATEMATICĂ
+</p>
+
+</section>
+
+<!-- CINE TE AJUTA -->
+<section class="bg-gray-50 py-20 px-6 my-16">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+    <img src="robert.jpeg" class="rounded-2xl shadow-xl w-full object-cover max-h-[500px]">
+
+    <div class="space-y-6 text-lg">
+      <h2 class="text-4xl font-black">
+        Cine îl va ajuta pe copilul dvs. să scape de blocaje?
+      </h2>
+
+      <p>Sunt Robert, am 25 de ani și ajut elevii de clasa a VIII-a să treacă peste pragul notei 5 și să obțină rezultate mai bune la proba de matematică.</p>
+
+      <p>Misiunea mea este să-l ajut pe copilul tău să înțeleagă pașii esențiali și să prindă mai mult curaj în pregătire.</p>
+
+      <ul class="space-y-2 list-none">
+        <li>✔️ Progres real pentru elevi care au început cu dificultăți la matematică </li>
+        <li>✔️ Am ajutat peste 200 de elevi să progreseze la matematică</li>
+        <li>✔️ De peste 2 ani lucrez cu elevi care vor să își organizeze mai bine materia </li>
+        <li>✔️ Fiecare formulă este explicată direct pe exerciții concrete</li>
+        <li>✔️ Explicații simple, exemple clare și o metodă ușor de urmărit </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+</div>
+</div>
+
+</section>
+
+<!-- PLAN -->
+<section class="bg-white text-center px-6">
+<h2 class="text-3xl font-black mb-8">
+Ce primește copilul în planul de pregătire?
+</h2>
+
+<!-- CE PRIMESTI - FORMAT -->
+<div class="max-w-3xl mx-auto mb-8 bg-gray-50 border border-green-200 rounded-2xl p-6 text-left">
+  <p class="text-green-600 font-black uppercase text-sm mb-4 tracking-wide">📦 După achiziție, vei avea acces la:</p>
+  <div class="space-y-3 text-base">
+    <div class="flex items-start gap-3">
+      <span class="text-green-500 font-black text-xl">✔</span>
+      <span><strong> Ghidul</strong> cu planul complet pe 8 zile -> explicații structurate, exerciții rezolvate pas cu pas și barem inclus</span>
+    </div>
+    <div class="flex items-start gap-3">
+      <span class="text-green-500 font-black text-xl">✔</span>
+      <span><strong>Materiale</strong> la care poți reveni ori de câte ori copilul are nevoie să repete înainte de examen</span>
+    </div>
+     </div>
+</div>
+
+
+<p class="mt-6 text-lg font-semibold max-w-xl mx-auto"><br>
+Fiecare zi are un obiectiv clar, pentru ca pregătirea să fie ușor de urmărit și fără sărit haotic de la un capitol la altul:
+</p>
+
+<br>
+
+<div class="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto text-left">
+
+  <div class="day-card">
+    <span class="day-title">Ziua 1</span>
+    <span class="day-topic">Ordinea operațiilor</span>
+    <p>Calcule de bază rezolvate corect</p>
+  </div>
+
+  <div class="day-card">
+    <span class="day-title">Ziua 2</span>
+    <span class="day-topic">Fracții</span>
+    <p>Operații explicate simplu</p>
+  </div>
+
+  <div class="day-card">
+    <span class="day-title">Ziua 3</span>
+    <span class="day-topic">Mulțimi și medii</span>
+    <p>Noțiuni importante recapitulate</p>
+  </div>
+
+  <div class="day-card">
+    <span class="day-title">Ziua 4</span>
+    <span class="day-topic">Radicali</span>
+    <p>Reguli esențiale aplicate direct pe exerciții</p>
+  </div>
+
+  <div class="day-card">
+    <span class="day-title">Ziua 5</span>
+    <span class="day-topic">Ecuații</span>
+    <p>Pași clari pentru rezolvare, verificare și evitarea greșelilor</p>
+  </div>
+
+  <div class="day-card">
+    <span class="day-title">Ziua 6-7</span>
+    <span class="day-topic">Geometrie — Subiectul II</span>
+    <p>Formule și metode de lucru pentru probleme</p>
+  </div>
+
+  <div class="day-card md:col-span-2 final-card">
+    <div class="final-content">
+        <span class="day-title">Ziua 8</span>
+        <span class="day-topic">Recapitulare finală</span>
+        <p>Fixarea noțiunilor importante și verificarea punctelor slabe</p>
+    </div>
+</div>
+
+</div>
+
+<a href="https://planulspre5.netlify.app/confirmare.html" class="btn-main offer-button mt-8 px-6 py-4 rounded-full text-base sm:text-xl inline-block w-full sm:w-auto max-w-xs sm:max-w-none">
+VREAU PLANUL DE 8 ZILE CU DOAR <span class="line-through text-red-700">300 lei</span> 99 LEI
+</a>
+
+<p class="text-gray-500 mt-3 sm:mt-2">Plan pe 8 zile | Explicații simple | Acces pe viață</p>
+<p class="text-green-500 font-semibold mt-3 sm:mt-1">
+🎁 BONUS: ÎNTÂLNIRE GRATUITĂ PENTRU CLARIFICĂRI, ÎNTREBĂRI ȘI SPRIJIN PERSONALIZAT LA MATEMATICĂ
+</p>
+
+</section>
+
+<!-- DOVADA -->
+<section class="bg-white py-12 text-center px-6">
+<h2 class="text-3xl font-black mb-8">
+Cum s-a văzut progresul în pregătirea elevilor
+</h2>
+
+<div class="max-w-5xl mx-auto columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
+<img src="casian.png">
+<img src="2.png">
+<img src="3.png">
+<img src="maria.png">
+<img src="9.png">
+<img src="7.png">
+<img src="daniel.png">
+<img src="8.png">
+<img src="6.png">
+</div>
+<br>
+
+</section>
+
+<!-- GARANTIE -->
+<section class="py-16 px-6 bg-gray-50 border-t border-gray-200">
+  <div class="max-w-5xl mx-auto bg-[#c6b37a] rounded-2xl shadow-xl p-8 text-center">
+    <h2 class="text-3xl font-black mb-4">
+      GARANȚIA ZERO RISCURI!
+    </h2>
+<BR>
+    <p class="text-xl font-semibold mb-4">
+      <strong>BANII ÎNAPOI ÎN 14 ZILE</strong>
+    </p>
+
+    <p class="max-w-3xl mx-auto text-lg mb-4">
+      Dacă în maxim 14 zile calendaristice de la efectuarea plății, copilul dvs. nu rezonează cu structura ghidului și consideră că nu este pentru el, puteți solicita integral banii înapoi, printr-un e-mail la adresa: <strong>robertmatematica0@gmail.com</strong>
+    </p>   
+ 
+<br><br>
+    <p class="text-xl font-semibold mb-4">
+      <strong>PROGRES VIZIBIL</strong>
+    </p>
+
+<p class="max-w-3xl mx-auto text-lg mb-4">
+      Dacă după parcurgerea integrală a ghidului, prin parcurgerea structurată a acestuia conform planului inclus, dar și aplicarea în probleme a metodelor prezentate în cuprinsul ghidului, copilul dvs. nu observă niciun progres real, primiți cadou din partea mea <strong>10 întâlniri 1 la 1 pe Zoom, de câte 2 ore, GRATUITE</strong>
+    </p>   
+
+<div class="mt-6 flex justify-center">
+      <img src="badge.png" class="w-42" alt="">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FAQ -->
+<section class="bg-white py-12 px-6 text-center border-t border-gray-200">
+<h2 class="text-3xl font-black mb-8">
+Întrebări frecvente
+</h2>
+
+<div class="max-w-3xl mx-auto text-left space-y-4">
+
+<!-- ITEM -->
+<div class="border-b pb-4">
+<button onclick="toggleFAQ(1)" class="w-full flex justify-between items-center text-lg font-semibold">
+<span>Dacă are multe goluri la matematică, îl poate ajuta planul? </span>
+<span id="icon1" class="text-2xl">+</span>
+</button>
+
+<div id="faq1" class="faq-content mt-3 text-gray-700">
+<p>Da.</p>
+<p class="mt-2">Planul este creat pentru elevii care au nevoie să reia lucrurile importante într-un mod simplu și organizat</p>
+<p class="mt-2">Copilul nu trebuie să știe deja tot, ci parcurge materia pas cu pas, cu explicații clare și exerciții aplicate! </p>
+</div>
+</div>
+
+<!-- ITEM -->
+<div class="border-b pb-4">
+<button onclick="toggleFAQ(2)" class="w-full flex justify-between items-center text-lg font-semibold">
+<span>De unde știu că este un program serios?</span>
+<span id="icon2" class="text-2xl">+</span>
+</button>
+
+<div id="faq2" class="faq-content mt-3 text-gray-700">
+<p class="mt-2">Puțeți verifica părerile elevilor care au lucrat deja cu mine, testimonialele reale și activitatea mea de pe social-media</p>
+<p class="mt-2">În plus, funcționez legal pe bază de PFA și eliberez factură la finalizarea comenzii! </p>
+</div>
+</div>
+
+<!-- ITEM -->
+<div class="border-b pb-4">
+<button onclick="toggleFAQ(3)" class="w-full flex justify-between items-center text-lg font-semibold">
+<span>Este prea târziu să mai recupereze materia?</span>
+<span id="icon3" class="text-2xl">+</span>
+</button>
+
+<div id="faq3" class="faq-content mt-3 text-gray-700">
+<p>Nu, dacă lucrează organizat.</p>
+<p class="mt-2">Planul este construit pentru o pregătire concentrată, în care copilul repetă noțiunile importante, lucrează exerciții esențiale și înțelege mai clar ce are de făcut în timpul rămas.</p>
+</div>
+</div>
+
+<!-- ITEM -->
+<div class="border-b pb-4">
+<button onclick="toggleFAQ(4)" class="w-full flex justify-between items-center text-lg font-semibold">
+<span>Ce se întâmplă dacă planul nu îl ajută? </span>
+<span id="icon4" class="text-2xl">+</span>
+</button>
+
+<div id="faq4" class="faq-content mt-3 text-gray-700">
+<p>Aveți garanția 100% fără riscuri! </p>
+<p class="mt-2">Dacă după parcurgerea planului nu vedeți progres real în pregătirea copilului, primiți toți banii înapoi + încă 5 întâlniri gratuite de sprijin.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<script>
+function toggleFAQ(n) {
+const content = document.getElementById("faq" + n);
+const icon = document.getElementById("icon" + n);
+
+if (content.classList.contains("open")) {
+content.classList.remove("open");
+icon.innerText = "+";
+} else {
+content.classList.add("open");
+icon.innerText = "−";
+}
+}
+</script>
+
+<script>
+const TIMER_DURATION = 25 * 60 * 1000;
+
+const STORAGE_KEY = "oferta_timer_end_time";
+
+const OFFER_99 = "https://planulspre5.netlify.app/confirmare.html";
+const OFFER_300 = "https://planulspre5.netlify.app/confirmation.html";
+
+let endTime = localStorage.getItem(STORAGE_KEY);
+
+if (!endTime) {
+    endTime = Date.now() + TIMER_DURATION;
+    localStorage.setItem(STORAGE_KEY, endTime);
+} else {
+    endTime = parseInt(endTime, 10);
+}
+
+function pad(num){
+    return num < 10 ? "0" + num : num;
+}
+
+function updateButtons(expired){
+    const buttons = document.querySelectorAll(".offer-button");
+
+    buttons.forEach(button => {
+        button.href = expired ? OFFER_300 : OFFER_99;
+    });
+}
+
+function updateTimer(){
+
+    const now = Date.now();
+    let diff = endTime - now;
+
+    if(diff <= 0){
+
+        document.getElementById("minutes").innerText = "00";
+        document.getElementById("seconds").innerText = "00";
+
+        updateButtons(true);
+
+        return;
+    }
+
+    updateButtons(false);
+
+    const minutes = Math.floor(diff / (1000 * 60));
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("minutes").innerText = pad(minutes);
+    document.getElementById("seconds").innerText = pad(seconds);
+}
+
+setInterval(updateTimer,1000);
+
+updateTimer();
+</script>
+
+
+<!-- WHATSAPP BUTON FIX -->
+<a href="https://wa.me/40747857075?text=Salut,%20Robert!%20Am%20o%20%C3%AEntrebare%20despre%20planul%20%22De%20la%20blocaje%20la%20claritate%20%C3%AEn%208%20zile%22"
+   target="_blank"
+   style="
+     position: fixed;
+     bottom: 24px;
+     right: 24px;
+     z-index: 9999;
+     background: #25D366;
+     color: white;
+     border-radius: 50px;
+     padding: 14px 20px;
+     font-weight: 900;
+     font-size: 15px;
+     text-decoration: none;
+     box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+     display: flex;
+     align-items: center;
+     gap: 8px;
+   ">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  Întreabă-mă pe WhatsApp
+</a>
+
+
+<footer class="bg-[#060b3b] text-white py-8 px-6">
+
+ <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_1.7fr_0.9fr] gap-6 items-start">
+
+    <!-- STANGA - BRAND -->
+    <div class="flex flex-col justify-center h-full text-center lg:text-center">
+      <h3 class="text-3xl font-black text-yellow-400">
+        Rupem Matematica
+      </h3>
+
+      <p class="text-sm text-gray-300 mt-3 leading-relaxed max-w-md mx-auto lg:mx-0">
+        Ajut elevii să depășească pragul notei 5, să înțeleagă matematica mai clar și să se pregătească mai organizat pentru examen.
+      </p>
+    </div>
+
+    <!-- MIJLOC - PAGINI -->
+    <div class="flex flex-col items-center text-center">
+      <p class="text-xs uppercase tracking-[4px] text-gray-400 font-black mb-5">
+        Pagini utile
+      </p>
+
+      <div class="flex flex-wrap xl:flex-nowrap justify-center items-center gap-x-5 gap-y-3 text-xs xl:text-sm font-bold text-gray-200 w-full">
+        <a href="/termeni.html" class="hover:text-yellow-400 transition whitespace-nowrap">
+          Termeni și Condiții
+        </a>
+
+        <a href="/confidentialitate.html" class="hover:text-yellow-400 transition whitespace-nowrap">
+          Confidențialitate
+        </a>
+
+        <a href="https://reclamatiisal.anpc.ro/" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition whitespace-nowrap">
+          ANPC
+        </a>
+
+        <a href="https://consumer-redress.ec.europa.eu/site-relocation_en?event=main.home2.show&lng=RO" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition whitespace-nowrap">
+          SOL
+        </a>
+
+        <a href="/contact.html" class="hover:text-yellow-400 transition whitespace-nowrap">
+          Contact
+        </a>
+      </div>
+    </div>
+
+   <!-- DREAPTA - SOCIAL MEDIA -->
+<div class="flex flex-col items-center text-center">
+  <p class="text-xs uppercase tracking-[4px] text-gray-400 font-black mb-5">
+    Urmărește-mă
+  </p>
+
+  <div class="flex items-center justify-center gap-3">
+
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/robert_matematica/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="bg-white/10 hover:bg-pink-500 transition p-3 rounded-xl hover:scale-110">
+
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="22"
+           height="22"
+           fill="white"
+           viewBox="0 0 24 24">
+        <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 1.8h8.5a3.95 3.95 0 013.95 3.95v8.5a3.95 3.95 0 01-3.95 3.95h-8.5a3.95 3.95 0 01-3.95-3.95v-8.5A3.95 3.95 0 017.75 3.8zm8.95 1.35a1.15 1.15 0 100 2.3 1.15 1.15 0 000-2.3zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.8A3.2 3.2 0 1112 15.2 3.2 3.2 0 0112 8.8z"/>
+      </svg>
+
+    </a>
+
+    <!-- TIKTOK -->
+    <a href="https://tiktok.com/@robert_matematica"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="bg-white/10 hover:bg-cyan-500 transition p-3 rounded-xl hover:scale-110">
+
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="21"
+           height="21"
+           fill="white"
+           viewBox="0 0 24 24">
+        <path d="M19.589 6.686a4.793 4.793 0 01-3.77-4.233V2h-3.193v13.548a2.896 2.896 0 11-2.896-2.896c.226 0 .445.027.655.078V9.482a6.084 6.084 0 00-.655-.036A6.084 6.084 0 1015.81 15.53V8.843a7.958 7.958 0 004.779 1.6V7.25a4.79 4.79 0 01-.999-.564z"/>
+      </svg>
+
+    </a>
+
+    <!-- FACEBOOK -->
+    <a href="https://www.facebook.com/profile.php?id=61577482034328"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="bg-white/10 hover:bg-blue-600 transition p-3 rounded-xl hover:scale-110">
+
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="22"
+           height="22"
+           fill="white"
+           viewBox="0 0 24 24">
+        <path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.19 2.23.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/>
+      </svg>
+
+    </a>
+
+    <!-- YOUTUBE -->
+    <a href="https://www.youtube.com/@RobertMatematica"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="bg-white/10 hover:bg-red-500 transition p-3 rounded-xl hover:scale-110">
+
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="22"
+           height="22"
+           fill="white"
+           viewBox="0 0 24 24">
+        <path d="M23.5 6.2a2.97 2.97 0 00-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A2.97 2.97 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 2.97 2.97 0 002.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a2.97 2.97 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+      </svg>
+
+    </a>
+
+  </div>
+</div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto border-t border-white/10 mt-6 pt-4 text-center text-xs text-gray-400">
+    © 2026 Rupem Matematica. Toate drepturile rezervate.
+  </div>
+
+</footer>
+
+</body>
+</html>

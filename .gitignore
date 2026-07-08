@@ -1,0 +1,28 @@
+﻿node_modules/
+**/node_modules/
+
+teste/
+.netlify/
+
+.env
+.env.*
+*.log
+
+*.zip
+*.exe
+
+files.zip
+backup smartbill.pdf
+
+r.token
+stripe_backup_code.txt
+server.js
+functions/*.json
+
+.DS_Store
+Thumbs.db
+
+Extras de cont_2026.pdf
+git
+
+config.js
